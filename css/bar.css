@@ -6,7 +6,7 @@ text {
         }
          #chart1, svg {
             margin: 0px;
-            padding: 0px;
+            padding: 5px;
             height: 100%;
             width: 100%;
         }
