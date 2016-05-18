@@ -37,6 +37,7 @@ var visualization = d3plus.viz()
     .text({"name":"name","group":"group"})
     .font({ "family": "Palanquin"})
     .tooltip({"Candidates":["group"]}) 
+    .resize(true)
     .mouse({
     "click": function(d, viz) {
         var candidate= render_viz();
