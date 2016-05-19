@@ -46,6 +46,7 @@ var visualization = d3plus.viz()
         var newdata2 = filter_tweet(newdata,candidate);
         // console.log(newdata2);
         renderList(newdata2);
+        // console.log(newdata2);
         var newdata3 = [];
         newdata3[0] = newdata2
         scatter_viz(newdata3);
@@ -83,15 +84,14 @@ function render_viz(){
 function filter_tweet(data,pairs){
   // var filter_candidats = [];
   var filter_data = {}
-   for (var j=0; j<data.length;j++){
+  for (var j=0; j<data.length;j++){
         if (data[j].key == pairs[0]){ 
           var filter_value = [];
           for (var h=0; h<data[j].values.length;h++){
             // data[j].values[h].label.indexOf(pairs[1].toLowerCase()) >-1) || 
-            if (data[j].values[h].label.indexOf(pairs[1]>-1)) {
+              var lowstring =data[j].values[h]['label'].toLowerCase()
+            if (lowstring.indexOf(pairs[1].toLowerCase())>-1)  {
               // "the fox jumped over the fence".replace(/fox/,"<span >"+'fox'+"</span>")
-              
-
               filter_value[h] = {x: data[j].values[h]["x"],
                                   y: data[j].values[h]["y"],
                                   // label:data[j].values[h]['label']
