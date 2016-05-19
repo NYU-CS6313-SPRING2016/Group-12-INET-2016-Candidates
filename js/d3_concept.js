@@ -111,7 +111,7 @@ var color = d3.scale.linear()
     .range([colors.length-1, 0])
     .clamp(true);
 
-var diameter = 760;
+var diameter = 700;
 var rect_width = 100;
 var rect_height = 30;
 
