@@ -85,9 +85,14 @@ function filter_tweet(data,pairs){
           for (var h=0; h<data[j].values.length;h++){
             // data[j].values[h].label.indexOf(pairs[1].toLowerCase()) >-1) || 
             if (data[j].values[h].label.indexOf(pairs[1]>-1)) {
+              // "the fox jumped over the fence".replace(/fox/,"<span >"+'fox'+"</span>")
+              
+
               filter_value[h] = {x: data[j].values[h]["x"],
                                   y: data[j].values[h]["y"],
-                                  label:data[j].values[h]['label']};
+                                  // label:data[j].values[h]['label']
+                                  label:data[j].values[h]['label']
+                                };
             }
           }
             // console.log(data[j]);
@@ -124,6 +129,16 @@ function renderList(data) {
             //         unHighlight()
             // });
             
+            // $("#tweetslist:contains('Trump')").html(function(_, html) {
+            //   return  html.replace(/(Trump)/g, '<span>$1</span>')
+            // });
+            
             selection.exit().remove();
             
+            
+
         }
+
+
+
+

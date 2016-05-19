@@ -53,6 +53,11 @@
     .body{
     background-color: #E9E9E9;
     }
+    #tweetslist span{
+    background-color:#FFFF00;
+    color:#555;
+}
+
     </style>
 
 
@@ -134,6 +139,10 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Real Tweets</h3>
+                                <!-- <h5>Type a Word!</h5> -->
+                              <!--   <form action="" method="" id="search" name="search">
+                                <input name="query" id="query" type="text" size="30" maxlength="30">
+                                <input name="searchit" type="button" value="Search" onClick="highlightSearch()"> -->
                             </div>
                             <div class="panel-body" style="overflow-y:scroll; overflow-x: hidden;height:700px;">
                                 <div>
@@ -189,6 +198,19 @@
     <script src="js/d3_treemap.js"></script>
     <!-- Concept Mao JavaScript -->
     <script src="js/d3_concept.js"></script>
+
+
+<!-- //     function highlightSearch() {
+//     var text = document.getElementById("query").value;
+//     var query = new RegExp("(\\b" + text + "\\b)", "gim");
+//     var e = document.getElementById("tweetslist").innerHTML;
+//     var enew = e.replace(/(<span>|<\/span>)/igm, "");
+//     document.getElementById("tweetslist").innerHTML = enew;
+//     var newe = enew.replace(query, "<span>$1</span>");
+//     document.getElementById("tweetslist").innerHTML = newe;
+
+// } -->
+
 
 </body>
 
