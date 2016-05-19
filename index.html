@@ -107,7 +107,7 @@
                 <!-- /.row -->
 
                 <div class="row">
-                    <div class="col-lg-10">
+                    <div class="col-lg-11">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Keyword Locator</h3>
@@ -118,14 +118,14 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-2">
+                    <div class="col-lg-1">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"></i>Countdown Timer</h3>
+                                <h5 class="panel-title">Countdown Timer</h5>
                             </div>
                             <div class="panel-body">
                                 <div id="r"></div>
-                                <div><button onclick="fresh_page()">Fresh Now</div>
+                                <div><button onclick="fresh_page()">Refresh Now</div>
                             </div>
                         </div>
                     </div>
@@ -231,7 +231,7 @@
     var start=Date.now(),r=document.getElementById('r');
     (function f(){
         var diff=Date.now()-start,ns=(((3e5-diff)/1000)>>0),m=(ns/60)>>0,s=ns-m*60;
-        r.textContent="Next Fresh in "+m+':'+((''+s).length>1?'':'0')+s+' minutes';
+        r.textContent="Next Refresh in "+m+':'+((''+s).length>1?'':'0')+s+' minutes';
         if(diff>(3e5)){start=Date.now()}
             setTimeout(f,1000);
         })();
