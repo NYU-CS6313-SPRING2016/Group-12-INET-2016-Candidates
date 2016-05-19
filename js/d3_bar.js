@@ -40,6 +40,7 @@ var long_short_data1 = [
 
 
     var chart;
+function bar_viz(long_short_data) {
     nv.addGraph(function() {
         chart = nv.models.multiBarHorizontalChart()
             .x(function(d) { return d.label })
@@ -66,6 +67,7 @@ var long_short_data1 = [
         });
         return chart;
     });
+  }
 
 
 var getJSON = function(url, callback) {
@@ -88,4 +90,5 @@ var long_short_data = null ;
 
 getJSON("http://twitter-primary.herokuapp.com/bar",function(err, data) {
       long_short_data= data;  
+      bar_viz(long_short_data);
 });
