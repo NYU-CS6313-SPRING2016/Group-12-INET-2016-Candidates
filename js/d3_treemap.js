@@ -29,7 +29,7 @@ var visualization = d3plus.viz()
     .color("group")             // groups colored to show ungrouping
     .id({
       "value": ["group","name"],
-      "grouping": false          // grouping set to false ungroups parent nesting
+      "grouping": true          // grouping set to false ungroups parent nesting
     })
     .labels({"align": "left", "valign": "top"})
     .depth(1)
@@ -38,7 +38,7 @@ var visualization = d3plus.viz()
     .font({ "family": "Palanquin"})
     .tooltip({"Candidates":["group"]}) 
     .resize(true)
-    .width(1145)
+    .width(1200)
     .mouse({
     "click": function(d, viz) {
         var candidate= render_viz();

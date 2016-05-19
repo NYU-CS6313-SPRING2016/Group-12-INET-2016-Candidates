@@ -65,8 +65,7 @@
 </head>
 
 <body>
-
-    <div id="wrapper">
+     <div id="wrapper">
 
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -83,24 +82,14 @@
             <!-- Top Menu Items -->
            
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav">
-                    <li class="active">
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Sentiment Analysis</a>
-                    </li>
-                    <li>
-                        <a href="about.html"><i class="fa fa-fw fa-edit"></i>About</a>
-                    </li>
-                    
-                </ul>
-            </div>
+           
             <!-- /.navbar-collapse -->
         </nav>
 
-        <div id="page-wrapper">
+
+     <div id="page-wrapper">
+                   
+
 
             <div class="container-fluid">
 
@@ -141,13 +130,13 @@
                     <div class="col-lg-4" >
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Real Tweets by Keyword</h3>
+                                <h3 class="panel-title">Real Tweets by Keyword(Click at Keyword Locator!)</h3>
                                 <!-- <h5>Type a Word!</h5> -->
                               <!--   <form action="" method="" id="search" name="search">
                                 <input name="query" id="query" type="text" size="30" maxlength="30">
                                 <input name="searchit" type="button" value="Search" onClick="highlightSearch()"> -->
                             </div>
-                            <div class="panel-body" style="overflow-y:scroll; overflow-x: hidden;height:700px;">
+                            <div class="panel-body" style="overflow-y:scroll; overflow-x: hidden;height:500px;">
                                 <div>
                                  <ui id="tweetslist">
                                  </ui> 
@@ -156,7 +145,7 @@
                         </div>
                     </div>
                     
-                     <div class="col-lg-8" >
+                    <!--  <div class="col-lg-8" >
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Keywords Network</h3>
@@ -166,21 +155,48 @@
                                  <div class="conceptmap"></div>
                             </div>
                             </div>
+                        </div> -->
+                    <!-- </div> -->
+
+                <!-- </div> -->
+                <!-- /.row -->
+                 <!-- <div class="row"> -->
+                   <div class="col-lg-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Overview of Objectivity and Polarity</h3>
+                            </div>
+                            <div class="panel-body">
+                                 <div id="chart" height:300px;>
+                                <svg height:300px;></svg>
+                            </div>
+                            </div>
                         </div>
                     </div>
-
-                </div>
                 <!-- /.row -->
+
+                
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Average Polarity</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="chart1" class='with-3d-shadow with-transitions'>
+                                    <svg width="700px" height="300px" ></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
 
                 
 
             </div>
-            <!-- /.container-fluid -->
-
         </div>
-        <!-- /#page-wrapper -->
-
-    </div>
+            <!-- /.container-fluid -->
     <!-- /#wrapper -->
 
     <!-- jQuery -->
@@ -213,6 +229,7 @@
 //     document.getElementById("tweetslist").innerHTML = newe;
 
 // } -->
+
 
 
 </body>
