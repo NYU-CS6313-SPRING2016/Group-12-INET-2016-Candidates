@@ -45,10 +45,11 @@ var visualization = d3plus.viz()
         // console.log(candidate);
         var newdata2 = filter_tweet(newdata,candidate);
         // console.log(newdata2);
-        renderList(newdata2);
-        // console.log(newdata2);
         var newdata3 = [];
         newdata3[0] = newdata2
+        renderList(newdata2);
+        // console.log(newdata2);
+        
         scatter_viz(newdata3);
         // console.log(newdata3);
 
