@@ -153,8 +153,14 @@ function get_color(name)
     var c = Math.round(color(name));
     if (isNaN(c))
         return '#dddddd';   // fallback color
-    
-    return colors[c];
+    if (name == 63){
+        return '#B22222';
+    } else if(name == 186){
+        return '#EACE3F';
+    } else {
+        return '#282F6B';
+    }
+    // return colors[c];
 }
 
 // Can't just use d3.svg.diagonal because one edge is in normal space, the
