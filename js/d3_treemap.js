@@ -46,7 +46,10 @@ var visualization = d3plus.viz()
         var newdata2 = filter_tweet(newdata,candidate);
         // console.log(newdata2);
         renderList(newdata2);
-        // console.log(newdata2)
+        var newdata3 = [];
+        newdata3[0] = newdata2
+        scatter_viz(newdata3);
+        // console.log(newdata3);
 
     }
 })
@@ -54,7 +57,8 @@ var visualization = d3plus.viz()
 }
 
 getJSON("http://twitter-primary.herokuapp.com/treemap",function(err, data) {
-      var sample_data1 =  data; 
+      var sample_data1 =  data;
+
       make_viz(sample_data1);
 });
 

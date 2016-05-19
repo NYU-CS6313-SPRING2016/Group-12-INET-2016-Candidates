@@ -2,8 +2,8 @@ var myChart;
 function scatter_viz(newdata) {
 nv.addGraph(function() {
   var chart = nv.models.scatterChart()
-                .showDistX(true)    //showDist, when true, will display those little distribution lines on the axis.
-                .showDistY(true)
+                // .showDistX(true)    //showDist, when true, will display those little distribution lines on the axis.
+                // .showDistY(true)
                 .useVoronoi(true)
                 .duration(350)
                 .color(["#B22222","#282F6B","EACE3F"]);
