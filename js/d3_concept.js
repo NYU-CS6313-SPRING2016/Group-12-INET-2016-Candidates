@@ -185,8 +185,9 @@ var svg = d3.select(".conceptmap")
     .append("svg")
     .attr("width", diameter)
     .attr("height", diameter)
+    // .attr("padding", '30px')
     .append("g")
-    .attr("transform", "translate(" + diameter / 2.5 + "," + diameter / 2.5 + ")");
+    .attr("transform", "translate(" + 350 + "," + diameter / 2.5 + ")");
     
 
 // links
