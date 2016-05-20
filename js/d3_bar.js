@@ -52,7 +52,7 @@ function bar_viz(long_short_data) {
 
         chart.yAxis.tickFormat(d3.format(',.2f'));
 
-        chart.yAxis.axisLabel('Sensitive Scores');
+        chart.yAxis.axisLabel('Sentiment Scores');
         // chart.xAxis.axisLabel('Candidates').axisLabelDistance(20);
 
         d3.select('#chart1 svg')
