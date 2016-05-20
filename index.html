@@ -98,7 +98,7 @@
                     <div class="col-lg-12">
                         <ol class="breadcrumb">
                             <li class="active">
-                                <button onclick="fresh_page()">
+                                <button onclick="resetTimeout()">
                                 <div id="r"> <i class="fa fa-dashboard"></i></div></button>
                                 
 
@@ -177,7 +177,7 @@
                    <div class="col-lg-4">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Overview of Objectivity and Polarity <button onclick="scatter_viz(newdata1)">Reset!</button> </h3>
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Overview of Subjectivity and Polarity <button onclick="scatter_viz(newdata1)">Reset!</button> </h3>
 
                             </div>
                             <div class="panel-body">
@@ -240,8 +240,13 @@
             setTimeout(f,1000);
         })();
 
-    function fresh_page(){
-        location.reload();
+   
+    </script>
+    <script>
+    var timeout = setTimeout("location.reload(true);",300000);
+    function resetTimeout(){
+        clearTimeout(timeout);
+        setTimeout("location.reload(true);", 300000);
     }
     </script>
 
