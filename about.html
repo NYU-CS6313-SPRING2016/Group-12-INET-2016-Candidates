@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Twitter Primary - A Real time Sentiment Analyzer of 2016 Candidates</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <!-- d3js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+    <!-- // <script type="text/javascript" src="https://raw.githubusercontent.com/mbostock/d3/v3.2.8/d3.min.js"></script> -->
+    
+    <!-- <script src="js/nv.d3.min.js"></script> -->
+    <script src="js/nv.d3_181.js"></script>
+    <script src="js/stream_layers.js"></script>
+    <!-- // <script src="http://www.d3plus.org/js/d3.js"></script> -->
+    <!-- // <script src="http://www.d3plus.org/js/d3plus.js"></script> -->
+    <script src="js/d3plus.js"></script>
+    
+
+      <!-- Bar CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bar.css" />
+    <link rel="stylesheet" type="text/css" href="css/nv.d3.css" />
+    <link rel="stylesheet" type="text/css" href="css/treemap.css" />
+    <link rel="stylesheet" type="text/css" href="css/concept.css" />
+    <style>
+    #chart svg {
+    height: 470px;
+    }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Twitter Primary - A Real time Sentiment Analyzer of 2016 Candidates</a>
+            </div>
+            <!-- Top Menu Items -->
+           
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li >
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Sentiment Analysis</a>
+                    </li>
+                    <li class='active'>
+                        <a href="about.html"><i class="fa fa-fw fa-edit"></i>About</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            About
+                        </h1>
+                        
+                    </div>
+                </div>
+                <!-- /.row -->
+                
+
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-md-12">
+            <p>
+                This dashboard is designed to visualize what twitter users are talking about for the 2016 presidential election and their preference towards different candidates based on real-time twitter data. All visualizations would be updated every 10 minutes.
+There are two sections of the dashboard: corpus exploration and sentiment analysis. 
+In the corpus exploration tab, a tree map is used to visualize the composition and percentage of high frequently mentioned words on twitter. In addition, a network was built to display the connection between keywords and candidates.
+In the sentiment analysis tab, the results of sentiment analysis on tweets were visualized through a scatter plot. The two axes correspond to the two dimensions that we used for sentiment analysis: polarity and objectivity. Also, a bar chart was used to visualize the polarity of tweets particularly.
+            </p>
+        </div>
+                
+                </div>
+                <!-- /.row -->
+
+                <!-- /.row -->
+
+               
+                <!-- /.row -->
+
+                
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+  <!--   // <script src="js/plugins/morris/raphael.min.js"></script>
+    // <script src="js/plugins/morris/morris.min.js"></script>
+    // <script src="js/plugins/morris/morris-data.js"></script> -->
+            <!-- Scatter Plot JavaScript -->
+    <script src="js/d3_scatter.js"></script>
+    <!-- Bar Chart JavaScript -->
+    <script src="js/d3_bar.js"></script>
+    <!-- Treemap JavaScript -->
+    <script src="js/d3_treemap.js"></script>
+    <!-- Concept Mao JavaScript -->
+    <script src="js/d3_concept.js"></script>
+
+</body>
+
+</html>

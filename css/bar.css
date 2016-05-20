@@ -4,7 +4,7 @@ text {
         svg {
             display: block;
         }
-        html, body, #chart1, svg {
+         #chart1 {
             margin: 0px;
             padding: 0px;
             height: 100%;

@@ -504,35 +504,99 @@ svg.nvd3-svg {
     fill-opacity: 0;
 }
 
-
 .nvtooltip {
-    position: absolute;
-    background-color: rgba(255,255,255,1.0);
-    color: rgba(0,0,0,1.0);
-    padding: 1px;
-    border: 1px solid rgba(0,0,0,.2);
-    z-index: 10000;
-    display: block;
-
-    font-family: Arial;
-    font-size: 13px;
-    text-align: left;
-    pointer-events: none;
-
-    white-space: nowrap;
-
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  position: absolute;
+  margin:-20px;
+  background-color: #ccc;
+  padding: 1px;
+  border: 1px solid rgba(0,0,0,.2);
+  z-index: 10000;
+  font-family: Arial;
+  font-size: 13px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
-.nvtooltip {
-    background: rgba(255,255,255, 0.8);
-    border: 1px solid rgba(0,0,0,0.5);
-    border-radius: 4px;
+/*Give tooltips that old fade in transition by
+    putting a "with-transitions" class on the container div.
+*/
+.nvtooltip.with-transitions, .with-transitions .nvtooltip {
+  transition: opacity 250ms linear;
+  -moz-transition: opacity 250ms linear;
+  -webkit-transition: opacity 250ms linear;
+  transition-delay: 250ms;
+  -moz-transition-delay: 250ms;
+  -webkit-transition-delay: 250ms;
+}
+.nvtooltip.x-nvtooltip,
+.nvtooltip.y-nvtooltip {
+  padding: 8px;
+}
+.nvtooltip h3 {
+  margin: 0;
+  padding: 4px 14px;
+  line-height: 18px;
+  font-weight: normal;
+  background-color: #E9E9E9;
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+.nvtooltip p {
+  margin-right:-100px;
+  padding: 5px 14px;
+<<<<<<< HEAD
+  text-align: center;
+=======
+  text-align: left;
+>>>>>>> master
+}
+.nvtooltip span {
+  display: inline-block;
+  margin: 2px 0;
+}
+.nvtooltip table {
+  margin: 6px;
+  border-spacing:0;
+}
+.nvtooltip table td {
+  padding: 2px 9px 2px 0;
+  vertical-align: middle;
+}
+.nvtooltip table td.key {
+  font-weight:normal;
+}
+.nvtooltip table td.value {
+  text-align: right;
+  font-weight: bold;
+}
+.nvtooltip table tr.highlight td {
+  padding: 1px 9px 1px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.nvtooltip table td.legend-color-guide div {
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+}
+.nvtooltip .footer {
+  padding: 3px;
+  text-align: center;
+}
+.nvtooltip-pending-removal {
+  position: absolute;
+  pointer-events: none;
 }
 
 /*Give tooltips that old fade in transition by
